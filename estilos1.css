@@ -42,7 +42,7 @@ nav p{
     object-fit: fill;
     position: relative;
 }
-.img_inicio{
+.head img{
     display: flex;
     width: 100%;
     height: auto;
@@ -51,6 +51,7 @@ nav p{
 .h1{
     background-color: red;
     position: absolute;
+    
 }
 
 
