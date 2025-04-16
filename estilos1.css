@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+.a{
+    display: flex;
+    background-color: black;
+    height: 5vh;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    flex-basis: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img_logo{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    background-color: black;
+}
+nav p{
+    display: flex;
+    color: white;
+    font-weight: bolder;
+}
+
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    height: 2vh;
+    object-fit: fill;
+    position: relative;
+}
+.img_inicio{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.h1{
+    background-color: red;
+    position: absolute;
+}
+
+
+
+/*Media querys*/
+/*Ajustar tamaño imagen del logo*/
+@media screen and (max-width: 514px) {
+    .img_logo img {
+        width: 70%;
+    }
+
+}
