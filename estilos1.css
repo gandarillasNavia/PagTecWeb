@@ -56,83 +56,97 @@ nav p{
 }
 .contenedor_1{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     flex-basis: 100%;
     background-color: rgb(255, 255, 255);
     justify-content: space-evenly;
     align-items: center;
-    height: 50vh;
+    height: auto;
 }
 
 .caja1_1{
     display: flex;
-    width: 30vw;
+    width: 95vw;
     background-color: rgb(23, 196, 34);
-    height: 50%;
+    height: 50vh;
+    margin: 20px;
 }
 .caja1_2{
     display: flex;
-    width: 30vw;
+    width: 95vw;
     background-color: rgb(131, 209, 29);
-    height: 50%;
+    height: 50vh;
+    margin: 20px;
 }
 
 .caja1_3{
     display: flex;
-    width: 30vw;
+    width: 95vw;
     background-color: rgb(209, 29, 134);
-    height: 50%;
+    height: 50vh;
+    margin: 20px;
 }
-
+/**/
 
 .contenedor_2{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     flex-basis: 100%;
-    background-color: rgb(124, 36, 36);
+    background-color: rgba(0, 0, 0, 0);
     align-items: center;
-    height: 40vh;
+    height: 250px;
 }
 .caja2_1{
     display: flex;
-    width: 100px;
+    flex-basis: 13%;
+    flex-shrink: 0;
     background-color: rgb(23, 196, 34);
-    height: 100px;
+    height: 150px;
+    margin: 20px;
 }
 .caja2_2{
     display: flex;
-    width: 100px;
+    flex-basis: 13%;
+    flex-shrink: 0;
     background-color: rgb(131, 209, 29);
-    height: 100px;
+    height: 150px;
+    margin: 20px;
+
 }
 
 .caja2_3{
     display: flex;
-    width: 100px;
+    flex-basis: 13%;
+    flex-shrink: 0;
     background-color: rgb(209, 29, 134);
-    height: 100px;
+    margin: 20px;
+    height: 150px;
 }
 
 .caja2_4{
     display: flex;
-    width: 100px;
+    flex-basis: 13%;
+    flex-shrink: 0;
     background-color: rgb(23, 196, 34);
-    height: 100px;
+    margin: 20px;
+    height: 150px;
 }
 .caja2_5{
     display: flex;
-    width: 100px;
+    flex-basis: 13%;
+    flex-shrink: 0;
     background-color: rgb(131, 209, 29);
-    height: 100px;
+    margin: 20px;
+    height: 150px;
 }
 
 .caja2_6{
     display: flex;
-    width: 100px;
+    flex-basis: 13%;
+    flex-shrink: 0;
     background-color: rgb(209, 29, 134);
-    height: 100px;
+    margin: 20px;
+    height: 150px;
 }
 
 .contenedor_3{
@@ -143,9 +157,40 @@ nav p{
 }
 /*Media querys*/
 /*Ajustar tamaño imagen del logo*/
-@media screen and (max-width: 514px) {
+@media screen and (max-width: 1004px) {
     .img_logo img {
         width: 70%;
     }
-
+    .contenedor_1{
+        flex-direction: column;
+    }
+    .contenedor_2{
+        height: 35vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contenedor_2 *{
+        flex-basis: 100px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .contenedor_2{
+        height: 45vh;
+    }
+    .contenedor_2 *{
+        flex-basis: 200px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .contenedor_2{
+        height: 70vh;
+    }
+}
+@media screen and (max-width: 480px) {
+    .contenedor_2{
+        height: 85vh;
+    }
+    .contenedor_2 *{
+        flex-basis: 150px;
+    }
 }
