@@ -122,10 +122,10 @@ h1{
     margin: 20px;
 }
 .caja1_1 img{
-    flex-basis: 100%;
+    display: block;
+    width: 100%;
     height: 50%;
     object-fit: contain;
-    display: block;
 }
 
 .caja1_1 .c11{
@@ -148,7 +148,6 @@ h1{
     margin: 20px;
 }
 .caja1_2 img{
-    flex-basis: 100%;
     height: 50%;
     object-fit: contain;
     display: block;
@@ -174,7 +173,6 @@ h1{
     margin: 20px;
 }
 .caja1_3 img{
-    flex-basis: 100%;
     height: 50%;
     object-fit: contain;
     display: block;
