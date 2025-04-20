@@ -156,52 +156,52 @@ h1{
 }
 .caja2_1{
     display: flex;
-    flex-basis: 140px;
+    flex-basis: 9vw;
     flex-shrink: 0;
     background-color: rgb(23, 196, 34);
     margin: 5px;
-    height: 170px;
+    height: 15vh;
 }
 .caja2_2{
     display: flex;
-    flex-basis: 140px;
+    flex-basis: 9vw;
     flex-shrink: 0;
     background-color: rgb(131, 209, 29);
     margin: 5px;
-    height: 170px;
+    height: 15vh;
 }
 .caja2_3{
     display: flex;
-    flex-basis: 140px;
+    flex-basis: 9vw;
     flex-shrink: 0;
     background-color: rgb(209, 29, 134);
     margin: 5px;
-    height: 170px;
+    height: 15vh;
 }
 .caja2_4{
     display: flex;
-    flex-basis: 140px;
+    flex-basis: 9vw;
     flex-shrink: 0;
     background-color: rgb(23, 196, 34);
     margin: 5px;
-    height: 170px;
+    height: 15vh;
 }
 .caja2_5{
     display: flex;
-    flex-basis: 140px;
+    flex-basis: 9vw;
     flex-shrink: 0;
     background-color: rgb(131, 209, 29);
     margin: 5px;
-    height: 170px;
+    height: 15vh;
 }
 
 .caja2_6{
     display: flex;
-    flex-basis: 140px;
+    flex-basis: 9vw;
     flex-shrink: 0;
     background-color: rgb(209, 29, 134);
     margin: 5px;
-    height: 170px;
+    height: 15vh;
 }
 /*PARTE DE CONTENEDOR 3*/
 
@@ -387,7 +387,7 @@ footer{
         height: 65vh;
     }
     .contenedor_2 *{
-        flex-basis: 250px;
+        flex-basis: 150px;
     }
 }
 /*pOR SI*/
