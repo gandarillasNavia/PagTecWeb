@@ -5,7 +5,9 @@ body{
     display: flex;
     background-color: black;
     height: 5vh;
+    width: 100%;
 }
+/*PARTE HEADER*/
 
 header{
     display: flex;
@@ -24,7 +26,7 @@ header{
 
 nav{
     display: flex;
-    flex-basis: 100%;
+    width: 100%;
     justify-content: space-evenly;
     background-color: black;
 }
@@ -34,26 +36,64 @@ nav p{
     font-weight: bolder;
 }
 
-.head{
-    background-color: aqua;
+.head {
     display: flex;
-    flex-wrap: wrap;
-    background-color: black;
-    height:auto;
-    object-fit: fill;
     position: relative;
-}
-.head img{
-    display: flex;
     width: 100%;
-    height: auto;
+    height: 70vh;
+    overflow: hidden;
+    align-items: center;  
+    justify-content: center;    
+}
+/*PARTE DEL h1*/
+  
+.head img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+  
+.h1 {
+    display: flex;
     justify-content: center;
-}
-.h1{
-    background-color: rgb(0, 255, 0);
+    flex-wrap: wrap;
     position: absolute;
-    
+    top: 50%;
+    left: 70vw;
+    height: 60%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 1rem 2rem; 
 }
+h1{
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    background-color: red;
+    height: 90px;
+    width: 100%;
+}
+.sub{
+    display: flex;
+    background-color: wheat;
+    width: 100%;
+}
+.sub p{
+
+}
+.texto{
+    display: flex;
+    background-color: wheat;
+    width: 100%;
+}
+.texto p{
+
+}
+/*PARTE DE CONTENEDOR 2*/
+
 .contenedor_1{
     display: flex;
     flex-direction: row;
@@ -86,58 +126,55 @@ nav p{
     height: 50vh;
     margin: 20px;
 }
-/**/
+/*PARTE DE CONTENEDOR 2*/
 
 .contenedor_2{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-basis: 100%;
     background-color: rgba(0, 0, 0, 0);
     align-items: center;
-    height: 250px;
+    height: 40vh;
 }
 .caja2_1{
     display: flex;
     flex-basis: 13%;
     flex-shrink: 0;
     background-color: rgb(23, 196, 34);
-    height: 150px;
-    margin: 20px;
+    margin: 5px;
+    height: 170px;
 }
 .caja2_2{
     display: flex;
     flex-basis: 13%;
     flex-shrink: 0;
     background-color: rgb(131, 209, 29);
-    height: 150px;
-    margin: 20px;
-
+    margin: 5px;
+    height: 170px;
 }
-
 .caja2_3{
     display: flex;
     flex-basis: 13%;
     flex-shrink: 0;
     background-color: rgb(209, 29, 134);
-    margin: 20px;
-    height: 150px;
+    margin: 5px;
+    height: 170px;
 }
-
 .caja2_4{
     display: flex;
     flex-basis: 13%;
     flex-shrink: 0;
     background-color: rgb(23, 196, 34);
-    margin: 20px;
-    height: 150px;
+    margin: 5px;
+    height: 170px;
 }
 .caja2_5{
     display: flex;
     flex-basis: 13%;
     flex-shrink: 0;
     background-color: rgb(131, 209, 29);
-    margin: 20px;
-    height: 150px;
+    margin: 5px;
+    height: 170px;
 }
 
 .caja2_6{
@@ -145,47 +182,162 @@ nav p{
     flex-basis: 13%;
     flex-shrink: 0;
     background-color: rgb(209, 29, 134);
-    margin: 20px;
-    height: 150px;
+    margin: 5px;
+    height: 170px;
 }
+/*PARTE DE CONTENEDOR 3*/
 
 .contenedor_3{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     flex-basis: 100%;
-    background-color: rgb(19, 29, 121);
+    background-color: rgb(255, 255, 255);
+    height: 130vh;
+}
+.caja3_1{
+    display: flex;
+    flex-basis: 45vw;
+    flex-shrink: 0;
+    background-color: rgb(23, 196, 34);
+    margin: 2px;
+    height: 30vh;
+}
+.caja3_2{
+    display: flex;
+    flex-basis: 45vw;
+    flex-shrink: 0;
+    background-color: rgb(131, 209, 29);
+    margin: 2px;
+    height: 30vh;
+}
+
+.caja3_3{
+    display: flex;
+    flex-basis: 45vw;
+    flex-shrink: 0;
+    background-color: rgb(209, 29, 134);
+    margin: 2px;
+    height: 30vh;
+}
+
+.caja3_4{
+    display: flex;
+    flex-basis: 45vw;
+    flex-shrink: 0;
+    background-color: rgb(23, 196, 34);
+    margin: 2px;
+    height: 30vh;
+}
+.caja3_5{
+    display: flex;
+    flex-basis: 45vw;
+    flex-shrink: 0;
+    background-color: rgb(131, 209, 29);
+    margin: 2px;
+    height: 30vh;
+}
+
+.caja3_6{
+    display: flex;
+    flex-basis: 45vw;
+    flex-shrink: 0;
+    background-color: rgb(209, 29, 134);
+    margin: 2px;
+    height: 30vh;
+}
+.caja3_7{
+    display: flex;
+    flex-basis: 92vw;
+    flex-shrink: 0;
+    background-color: rgb(107, 50, 83);
+    margin: 2px;
+    height: 30vh;
+}
+/*PARTE DE CONTENEDOR 4*/
+
+.contenedor_4{
+    display: flex;
+    flex-basis: 100%;
+    background-color: green;
     height: 400vh;
 }
+/*PARTE DE CONTENEDOR 5*/
+
+.contenedor_5{
+    display: flex;
+    flex-basis: 100%;
+    background-color: grey;
+    height: 400vh;
+}
+/*PARTE DE CONTENEDOR 6*/
+
+.contenedor_6{
+    display: flex;
+    flex-basis: 100%;
+    background-color: aqua;
+    height: 400vh;
+}/*PARTE DE CONTENEDOR 7*/
+
+.contenedor_7{
+    display: flex;
+    flex-basis: 100%;
+    background-color: hotpink;
+    height: 400vh;
+}/*PARTE DE FOOTER*/
+
+footer{
+    display: flex;
+    flex-basis: 100%;
+    background-color: gray;
+    height: 400vh;
+}
+
+
 /*Media querys*/
-/*Ajustar tamaño imagen del logo*/
-@media screen and (max-width: 1004px) {
-    .img_logo img {
-        width: 70%;
-    }
+@media screen and (max-width: 1024px) {
+
     .contenedor_1{
         flex-direction: column;
     }
     .contenedor_2{
-        height: 35vh;
+        height: 50vh;
         flex-direction: row;
         flex-wrap: wrap;
     }
     .contenedor_2 *{
-        flex-basis: 100px;
+        flex-basis: 250px;
     }
+    .contenedor_3{
+        height: 250vh;
+        align-items: center;
+    }
+    .contenedor_3 * {
+        flex-basis: 92vw;
+        height: 32vh;
+    }
+
 }
 @media screen and (max-width: 840px) {
     .contenedor_2{
-        height: 45vh;
+        height: 65vh;
     }
     .contenedor_2 *{
-        flex-basis: 200px;
+        flex-basis: 250px;
     }
 }
+/*pOR SI*/
 @media screen and (max-width: 720px) {
+    img{
+        height: 70%;
+        width: 70%;
+    }
     .contenedor_2{
         height: 70vh;
     }
 }
+/*Probando*/
 @media screen and (max-width: 480px) {
     .contenedor_2{
         height: 85vh;
