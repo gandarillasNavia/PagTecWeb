@@ -92,53 +92,60 @@ h1{
 .texto p{
 
 }
-/*PARTE DE CONTENEDOR 2*/
+/*PARTE DE CONTENEDOR 1*/
 
 .contenedor_1{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     flex-basis: 100%;
     background-color: rgb(255, 255, 255);
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: auto;
 }
 
 .caja1_1{
     display: flex;
-    width: 95vw;
+    flex-shrink: 0;
+    flex-basis: 25vw;
     background-color: rgb(23, 196, 34);
-    height: 50vh;
+    height: 45vh;
     margin: 20px;
 }
 .caja1_2{
+    flex-shrink: 0;
     display: flex;
-    width: 95vw;
+    flex-basis: 25vw;
     background-color: rgb(131, 209, 29);
-    height: 50vh;
+    height: 45vh;
     margin: 20px;
 }
 
 .caja1_3{
+    flex-shrink: 0;
     display: flex;
-    width: 95vw;
+    flex-basis: 25vw;
     background-color: rgb(209, 29, 134);
-    height: 50vh;
+    height: 45vh;
     margin: 20px;
 }
 /*PARTE DE CONTENEDOR 2*/
 
 .contenedor_2{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-basis: 100%;
+    flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0);
     align-items: center;
-    height: 40vh;
+    height: 40vh;    
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 .caja2_1{
     display: flex;
-    flex-basis: 13%;
+    flex-basis: 140px;
     flex-shrink: 0;
     background-color: rgb(23, 196, 34);
     margin: 5px;
@@ -146,7 +153,7 @@ h1{
 }
 .caja2_2{
     display: flex;
-    flex-basis: 13%;
+    flex-basis: 140px;
     flex-shrink: 0;
     background-color: rgb(131, 209, 29);
     margin: 5px;
@@ -154,7 +161,7 @@ h1{
 }
 .caja2_3{
     display: flex;
-    flex-basis: 13%;
+    flex-basis: 140px;
     flex-shrink: 0;
     background-color: rgb(209, 29, 134);
     margin: 5px;
@@ -162,7 +169,7 @@ h1{
 }
 .caja2_4{
     display: flex;
-    flex-basis: 13%;
+    flex-basis: 140px;
     flex-shrink: 0;
     background-color: rgb(23, 196, 34);
     margin: 5px;
@@ -170,7 +177,7 @@ h1{
 }
 .caja2_5{
     display: flex;
-    flex-basis: 13%;
+    flex-basis: 140px;
     flex-shrink: 0;
     background-color: rgb(131, 209, 29);
     margin: 5px;
@@ -179,7 +186,7 @@ h1{
 
 .caja2_6{
     display: flex;
-    flex-basis: 13%;
+    flex-basis: 140px;
     flex-shrink: 0;
     background-color: rgb(209, 29, 134);
     margin: 5px;
@@ -191,14 +198,17 @@ h1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     flex-basis: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(121, 18, 18);
     height: 130vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 .caja3_1{
     display: flex;
-    flex-basis: 45vw;
+    flex-basis: 33vw;
     flex-shrink: 0;
     background-color: rgb(23, 196, 34);
     margin: 2px;
@@ -206,7 +216,7 @@ h1{
 }
 .caja3_2{
     display: flex;
-    flex-basis: 45vw;
+    flex-basis: 33vw;
     flex-shrink: 0;
     background-color: rgb(131, 209, 29);
     margin: 2px;
@@ -215,7 +225,7 @@ h1{
 
 .caja3_3{
     display: flex;
-    flex-basis: 45vw;
+    flex-basis: 33vw;
     flex-shrink: 0;
     background-color: rgb(209, 29, 134);
     margin: 2px;
@@ -224,7 +234,7 @@ h1{
 
 .caja3_4{
     display: flex;
-    flex-basis: 45vw;
+    flex-basis: 33vw;
     flex-shrink: 0;
     background-color: rgb(23, 196, 34);
     margin: 2px;
@@ -232,7 +242,7 @@ h1{
 }
 .caja3_5{
     display: flex;
-    flex-basis: 45vw;
+    flex-basis: 33vw;
     flex-shrink: 0;
     background-color: rgb(131, 209, 29);
     margin: 2px;
@@ -241,7 +251,7 @@ h1{
 
 .caja3_6{
     display: flex;
-    flex-basis: 45vw;
+    flex-basis: 33vw;
     flex-shrink: 0;
     background-color: rgb(209, 29, 134);
     margin: 2px;
@@ -249,7 +259,7 @@ h1{
 }
 .caja3_7{
     display: flex;
-    flex-basis: 92vw;
+    flex-basis: 70vw;
     flex-shrink: 0;
     background-color: rgb(107, 50, 83);
     margin: 2px;
@@ -296,15 +306,19 @@ footer{
 
 
 /*Media querys*/
-@media screen and (max-width: 1024px) {
 
-    .contenedor_1{
-        flex-direction: column;
+@media screen and (max-width: 1900px) {
+    .contenedor_1 *{
+        flex-basis: 80vw;
     }
+
+}
+@media screen and (max-width: 1080px) {
     .contenedor_2{
-        height: 50vh;
+        height: 65vh;
         flex-direction: row;
         flex-wrap: wrap;
+
     }
     .contenedor_2 *{
         flex-basis: 250px;
@@ -312,11 +326,15 @@ footer{
     .contenedor_3{
         height: 250vh;
         align-items: center;
+        justify-content: stretch;
+        flex-wrap: wrap;
     }
     .contenedor_3 * {
-        flex-basis: 92vw;
-        height: 32vh;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
     }
+
 
 }
 @media screen and (max-width: 840px) {
@@ -335,6 +353,11 @@ footer{
     }
     .contenedor_2{
         height: 70vh;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .contenedor_2 *{
+        flex-basis: 150px;
     }
 }
 /*Probando*/
