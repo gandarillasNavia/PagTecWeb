@@ -7,8 +7,8 @@ body{
     height: 5vh;
     width: 100%;
 }
-/*PARTE HEADER*/
 
+/*PARTE HEADER, HECHO*/
 header{
     display: flex;
     background-color: black;
@@ -23,7 +23,6 @@ header img{
     object-fit: cover;
     display: block;
 }
-
 nav{
     display: flex;
     flex-basis: 100%;
@@ -35,7 +34,6 @@ nav p{
     font-weight: bolder;
     font-size: 2vh;
 }
-
 .head {
     display: flex;
     position: relative;
@@ -45,15 +43,15 @@ nav p{
     align-items: center;  
     justify-content: center;    
 }
-/*PARTE DEL h1*/
-  
+
+/*PARTE DEL h1, FALTAN DETALLES*/
+
 .head img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
-  
 .h1 {
     display: flex;
     justify-content: center;
@@ -100,6 +98,7 @@ h1{
     align-content: center;
     font-size: 2vh;
 }
+
 /*PARTE DE CONTENEDOR 1*/
 
 .contenedor_1{
@@ -190,52 +189,105 @@ h1{
 }
 .caja2_1{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-basis: 9vw;
     flex-shrink: 0;
     background-color: rgb(23, 196, 34);
     margin: 5px;
     height: 15vh;
+    font-size: 1vh;
+}
+.caja2_1 img{
+    flex-basis: 100%;
+    height: 80%;
+    object-fit: contain;
+    display: block;
 }
 .caja2_2{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-basis: 9vw;
     flex-shrink: 0;
     background-color: rgb(131, 209, 29);
     margin: 5px;
     height: 15vh;
+    font-size: 1vh;
+}
+.caja2_2 img{
+    flex-basis: 100%;
+    height: 80%;
+    object-fit: contain;
+    display: block;
 }
 .caja2_3{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-basis: 9vw;
     flex-shrink: 0;
     background-color: rgb(209, 29, 134);
     margin: 5px;
     height: 15vh;
+    font-size: 1vh;
+}
+.caja2_3 img{
+    flex-basis: 100%;
+    height: 80%;
+    object-fit: contain;
+    display: block;
 }
 .caja2_4{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-basis: 9vw;
     flex-shrink: 0;
     background-color: rgb(23, 196, 34);
     margin: 5px;
     height: 15vh;
+    font-size: 1vh;
+}
+.caja2_4 img{
+    flex-basis: 100%;
+    height: 80%;
+    object-fit: contain;
+    display: block;
 }
 .caja2_5{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-basis: 9vw;
     flex-shrink: 0;
     background-color: rgb(131, 209, 29);
     margin: 5px;
     height: 15vh;
+    font-size: 1vh;
 }
-
+.caja2_5 img{
+    flex-basis: 100%;
+    height: 80%;
+    object-fit: contain;
+    display: block;
+}
 .caja2_6{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-basis: 9vw;
     flex-shrink: 0;
     background-color: rgb(209, 29, 134);
     margin: 5px;
     height: 15vh;
+    font-size: 1vh;
+}
+.caja2_6 img{
+    flex-basis: 100%;
+    height: 80%;
+    object-fit: contain;
+    display: block;
 }
 /*PARTE DE CONTENEDOR 3*/
 
@@ -414,9 +466,48 @@ h1{
 .contenedor_6{
     display: flex;
     flex-basis: 100%;
-    background-color: aqua;
-    height: 10vh;
-}/*PARTE DE CONTENEDOR 7*/
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.caja6_1{
+    display: flex;
+    flex-basis: 79vw;
+    flex-shrink: 0;
+    background-color: rgb(23, 196, 34);
+    margin: 1vh;
+    height: 40vh;
+}
+.caja6_2{
+    display: flex;
+    flex-basis: 39vw;
+    flex-shrink: 0;
+    background-color: rgb(131, 209, 29);
+    margin: 1vh;
+    height: 50vh;
+}
+
+.caja6_3{
+    display: flex;
+    flex-basis: 39vw;
+    flex-shrink: 0;
+    background-color: rgb(209, 29, 134);
+    margin: 1vh;
+    height: 50vh;
+}
+
+.caja6_4{
+    display: flex;
+    flex-basis: 79vw;
+    flex-shrink: 0;
+    background-color: rgb(23, 196, 34);
+    margin: 1vh;
+    height: 40vh;
+}
+/*PARTE DE CONTENEDOR 7*/
 
 .contenedor_7{
     display: flex;
@@ -452,7 +543,8 @@ footer{
 
     }
     .contenedor_2 *{
-        flex-basis: 250px;
+        flex-basis: 15vw;
+        text-align: center;
     }
     .contenedor_3{
         height: 250vh;
@@ -475,6 +567,10 @@ footer{
         justify-content: flex-start;
         flex-basis: 60vw;
         height: 99vh;
+    }
+    .contenedor_6 * {
+        flex-basis: 85vw;
+        height: 50vh;
     }
 }
 @media screen and (max-width: 840px) {
