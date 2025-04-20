@@ -107,11 +107,22 @@ h1{
 
 .caja1_1{
     display: flex;
+    flex-wrap: wrap;
     flex-shrink: 0;
     flex-basis: 25vw;
     background-color: rgb(23, 196, 34);
     height: 45vh;
     margin: 20px;
+}
+.caja1_1 img{
+    flex-basis: 100%;
+    height: 50%;
+    object-fit: contain;
+    display: block;
+}
+.caja1_1 p{
+    flex-basis: 100%;
+    height: 50%;
 }
 .caja1_2{
     flex-shrink: 0;
@@ -278,6 +289,7 @@ h1{
     height: auto;
 }
 .caja4_head{
+    width: 100%;
     color: aliceblue;
 }
 .caja4_1{
@@ -339,7 +351,7 @@ footer{
 
 /*Media querys*/
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1080px) {
     .contenedor_1 *{
         flex-basis: 80vw;
     }
@@ -347,8 +359,6 @@ footer{
         flex-basis: 80vw;
     }
 
-}
-@media screen and (max-width: 1080px) {
     .contenedor_2{
         height: 65vh;
         flex-direction: row;
