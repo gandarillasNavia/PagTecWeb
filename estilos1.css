@@ -231,54 +231,47 @@ h1{
 
 .contenedor_2{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     flex-basis: 100%;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0);
     align-items: center;
-    height: 40vh;    
-
+    height: 50vh;    
 }
 .caja2_1{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-basis: 80%;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-basis: 100%;
     flex-shrink: 0;
-    background-color: rgb(255, 255, 255);
-    margin: 5px;
-    height: 15vh;
+    background-color: rgb(212, 19, 19);
+    height: 50%;
     font-size: 1vh;
 }
-.caja2_1 img{
-    flex-basis: 100%;
+.caja2_1 *{
+    flex-basis: 10%;
+    text-align: center;
     height: 80%;
     object-fit: contain;
     display: block;
 }
 .caja2_2{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 80%;;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-basis: 100%;
     flex-shrink: 0;
-    background-color: rgb(255, 255, 255);
-    margin: 5px;
-    height: 15vh;
+    background-color: rgb(177, 119, 119);
+    height: 50%;
     font-size: 1vh;
 }
-.caja2_2 img{
-    flex-basis: 100%;
+.caja2_2 *{
+    flex-basis: 10%;
+    text-align: center;
     height: 80%;
     object-fit: contain;
     display: block;
 }
-.caja2_2 p{
-    width: 100%;
-}
+
 
 /*PARTE DE CONTENEDOR 3*/
 
@@ -659,21 +652,18 @@ footer{
     }
     .contenedor_2{
         height: 65vh;
-        flex-direction: row;
-        flex-wrap: wrap;
+        width: 100%;
     }
-    .contenedor_2 *{
-        flex-basis: 15vw;
-        text-align: center;
+    .contenedor_2 .caja2_1, .caja2_2{
+        flex-basis: 40%;
+        justify-content: space-evenly;
+        align-content: space-around;
     }
     .contenedor_3{
         height: 250vh;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-
-    }
-    .contenedor_3 * {
 
     }
     .contenedor_3 img{
@@ -705,27 +695,11 @@ footer{
 
 }
 @media screen and (max-width: 840px) {
-    .contenedor_2{
-        height: 65vh;
-    }
-    .contenedor_2 *{
-        flex-basis: 150px;
-    }
+
 }
 /*pOR SI*/
 @media screen and (max-width: 720px) {
-    img{
-        height: 70%;
-        width: 70%;
-    }
-    .contenedor_2{
-        height: 70vh;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-    .contenedor_2 *{
-        flex-basis: 150px;
-    }
+
 }
 /*Probando*/
 @media screen and (max-width: 480px) {
