@@ -50,8 +50,6 @@ nav p{
 /*PARTE DEL h1, FALTAN DETALLES*/
 
 .head img {
-
-
     width: 70VW;
     height: 70vh;
     object-fit: cover;
@@ -233,20 +231,21 @@ h1{
 
 .contenedor_2{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
     flex-basis: 100%;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0);
     align-items: center;
     height: 40vh;    
-    padding-left: 15vw;
-    padding-right: 15vw;
+
 }
 .caja2_1{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    flex-basis: 9vw;
+    flex-basis: 80%;
     flex-shrink: 0;
     background-color: rgb(255, 255, 255);
     margin: 5px;
@@ -262,8 +261,9 @@ h1{
 .caja2_2{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    flex-basis: 9vw;
+    flex-basis: 80%;;
     flex-shrink: 0;
     background-color: rgb(255, 255, 255);
     margin: 5px;
@@ -276,92 +276,25 @@ h1{
     object-fit: contain;
     display: block;
 }
-.caja2_3{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-basis: 9vw;
-    flex-shrink: 0;
-    background-color: rgb(255, 255, 255);
-    margin: 5px;
-    height: 15vh;
-    font-size: 1vh;
+.caja2_2 p{
+    width: 100%;
 }
-.caja2_3 img{
-    flex-basis: 100%;
-    height: 80%;
-    object-fit: contain;
-    display: block;
-}
-.caja2_4{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-basis: 9vw;
-    flex-shrink: 0;
-    background-color: rgb(255, 255, 255);
-    margin: 5px;
-    height: 15vh;
-    font-size: 1vh;
-}
-.caja2_4 img{
-    flex-basis: 100%;
-    height: 80%;
-    object-fit: contain;
-    display: block;
-}
-.caja2_5{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-basis: 9vw;
-    flex-shrink: 0;
-    background-color: rgb(255, 255, 255);
-    margin: 5px;
-    height: 15vh;
-    font-size: 1vh;
-}
-.caja2_5 img{
-    flex-basis: 100%;
-    height: 80%;
-    object-fit: contain;
-    display: block;
-}
-.caja2_6{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-basis: 9vw;
-    flex-shrink: 0;
-    background-color: rgb(255, 255, 255);
-    margin: 5px;
-    height: 15vh;
-    font-size: 1vh;
-}
-.caja2_6 img{
-    flex-basis: 100%;
-    height: 80%;
-    object-fit: contain;
-    display: block;
-}
+
 /*PARTE DE CONTENEDOR 3*/
 
 .contenedor_3{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
-    flex-basis: 100%;
+    flex-basis: 1200px;
     background-color: rgb(255, 255, 255);
     height: 130vh;
-    padding-left: 15vw;
-    padding-right: 15vw;
 }
 .caja3_1{
     display: flex;
-
-    flex-basis: 33vw;
+    flex-basis: 620px;
     flex-shrink: 0;
     background-color: rgb(23, 196, 34);
     margin: 2px;
@@ -380,7 +313,7 @@ h1{
 
 .caja3_2{
     display: flex;
-    flex-basis: 33vw;
+    flex-basis: 620px;
     flex-shrink: 0;
     background-color: rgb(131, 209, 29);
     margin: 2px;
@@ -389,7 +322,7 @@ h1{
 
 .caja3_3{
     display: flex;
-    flex-basis: 33vw;
+    flex-basis: 620px;
     flex-shrink: 0;
     background-color: rgb(209, 29, 134);
     margin: 2px;
@@ -398,7 +331,7 @@ h1{
 
 .caja3_4{
     display: flex;
-    flex-basis: 33vw;
+    flex-basis: 620px;
     flex-shrink: 0;
     background-color: rgb(23, 196, 34);
     margin: 2px;
@@ -406,7 +339,7 @@ h1{
 }
 .caja3_5{
     display: flex;
-    flex-basis: 33vw;
+    flex-basis: 620px;
     flex-shrink: 0;
     background-color: rgb(131, 209, 29);
     margin: 2px;
@@ -415,7 +348,7 @@ h1{
 
 .caja3_6{
     display: flex;
-    flex-basis: 33vw;
+    flex-basis: 620px;
     flex-shrink: 0;
     background-color: rgb(209, 29, 134);
     margin: 2px;
@@ -674,7 +607,17 @@ footer{
 
 
 /*Media querys*/
-
+@media screen and (max-width: 1262px) {
+    .contenedor_2{
+        justify-content: space-evenly;
+    }
+    .contenedor_3{
+        height: 220vh;
+    }
+    .caja3_1,.caja3_2,.caja3_3,.caja3_4,.caja3_5,.caja3_6,.caja3_7 {
+        flex-basis: 90vw;
+    }
+}
 @media screen and (max-width: 1080px) {
     h1{
         font-size: 4vh;
@@ -726,12 +669,12 @@ footer{
     .contenedor_3{
         height: 250vh;
         align-items: center;
-        justify-content: stretch;
+        justify-content: center;
         flex-wrap: wrap;
+
     }
     .contenedor_3 * {
-        flex-basis: 100%;
-        flex-wrap: wrap;
+
     }
     .contenedor_3 img{
         height: 30%;
