@@ -117,7 +117,7 @@ h1{
     flex-wrap: wrap;
     flex-shrink: 0;
     flex-basis: 25vw;
-    background-color: rgb(23, 196, 34);
+    background-color: #161616;
     height: 45vh;
     margin: 20px;
 }
@@ -129,21 +129,33 @@ h1{
 }
 
 .caja1_1 .c11{
-    background-color: red;
+    display: flex;
+    background-color: rgb(0, 0, 0);
     flex-basis: 100%;
     height: 50%;
 }
+.c11 .subc11{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
 .c11 p{
     background-color: rgb(116, 79, 79);
-    padding: 6%;
+    width: 100%;
     font-size: 2vh;
+    text-align: center;
 }
 .caja1_2{
     flex-wrap: wrap;
     flex-shrink: 0;
     display: flex;
     flex-basis: 25vw;
-    background-color: rgb(131, 209, 29);
+    background-color: #161616;
     height: 45vh;
     margin: 20px;
 }
@@ -153,14 +165,26 @@ h1{
     display: block;
 }
 .caja1_2 .c12{
-    background-color: red;
+    display: flex;
+    background-color: rgb(0, 0, 0);
     flex-basis: 100%;
     height: 50%;
 }
-.c12 p{
+.c12 .subc12{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.subc12 p{
     background-color: rgb(116, 79, 79);
-    padding: 6%;
+    width: 100%;
     font-size: 2vh;
+    text-align: center;
 }
 .caja1_3{
     flex-shrink: 0;
@@ -168,7 +192,7 @@ h1{
     display: flex;
     justify-content: center;
     flex-basis: 25vw;
-    background-color: rgb(209, 29, 134);
+    background-color: #161616;
     height: 45vh;
     margin: 20px;
 }
@@ -178,14 +202,26 @@ h1{
     display: block;
 }
 .caja1_3 .c13{
-    background-color: red;
+    display: flex;
+    background-color: rgb(0, 0, 0);
     flex-basis: 100%;
     height: 50%;
 }
-.c13 p{
+.c13 .subc13{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.subc13 p{
     background-color: rgb(116, 79, 79);
-    padding: 6%;
+    width: 100%;
     font-size: 2vh;
+    text-align: center;
 }
 /*PARTE DE CONTENEDOR 2*/
 
@@ -206,7 +242,7 @@ h1{
     justify-content: center;
     flex-basis: 9vw;
     flex-shrink: 0;
-    background-color: rgb(23, 196, 34);
+    background-color: rgb(255, 255, 255);
     margin: 5px;
     height: 15vh;
     font-size: 1vh;
@@ -223,7 +259,7 @@ h1{
     justify-content: center;
     flex-basis: 9vw;
     flex-shrink: 0;
-    background-color: rgb(131, 209, 29);
+    background-color: rgb(255, 255, 255);
     margin: 5px;
     height: 15vh;
     font-size: 1vh;
@@ -240,7 +276,7 @@ h1{
     justify-content: center;
     flex-basis: 9vw;
     flex-shrink: 0;
-    background-color: rgb(209, 29, 134);
+    background-color: rgb(255, 255, 255);
     margin: 5px;
     height: 15vh;
     font-size: 1vh;
@@ -257,7 +293,7 @@ h1{
     justify-content: center;
     flex-basis: 9vw;
     flex-shrink: 0;
-    background-color: rgb(23, 196, 34);
+    background-color: rgb(255, 255, 255);
     margin: 5px;
     height: 15vh;
     font-size: 1vh;
@@ -274,7 +310,7 @@ h1{
     justify-content: center;
     flex-basis: 9vw;
     flex-shrink: 0;
-    background-color: rgb(131, 209, 29);
+    background-color: rgb(255, 255, 255);
     margin: 5px;
     height: 15vh;
     font-size: 1vh;
@@ -291,7 +327,7 @@ h1{
     justify-content: center;
     flex-basis: 9vw;
     flex-shrink: 0;
-    background-color: rgb(209, 29, 134);
+    background-color: rgb(255, 255, 255);
     margin: 5px;
     height: 15vh;
     font-size: 1vh;
