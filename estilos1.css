@@ -360,6 +360,17 @@ h1{
     margin: 2px;
     height: 30vh;
 }
+.caja3_1 img{
+    width: 50%;
+    object-fit: fill;
+    display: block;
+}
+.caja3_1 .side31{
+    background-color: red;
+    display: flex;
+    flex-basis: 50vw;
+}
+
 .caja3_2{
     display: flex;
     flex-basis: 33vw;
@@ -430,28 +441,64 @@ h1{
 }
 .caja4_1{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-shrink: 0;
     flex-basis: 25vw;
     background-color: rgb(23, 196, 34);
     height: 45vh;
     margin: 20px;
 }
+.caja4_1 img{
+    height: 40%;
+    object-fit: fill;
+    display: block;
+}
+.caja4_1 .c41{
+    background-color: red;
+    flex-basis: 100%;
+    height: 60%;
+}
+
 .caja4_2{
     flex-shrink: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-basis: 25vw;
     background-color: rgb(131, 209, 29);
     height: 45vh;
     margin: 20px;
 }
-
+.caja4_2 img{
+    height: 40%;
+    object-fit: fill;
+    display: block;
+}
+.caja4_2 .c42{
+    background-color: red;
+    flex-basis: 100%;
+    height: 60%;
+}
 .caja4_3{
     flex-shrink: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-basis: 25vw;
     background-color: rgb(209, 29, 134);
     height: 45vh;
     margin: 20px;
+}
+.caja4_3 img{
+    height: 40%;
+    object-fit: fill;
+    display: block;
+}
+.caja4_3 .c43{
+    background-color: red;
+    flex-basis: 100%;
+    height: 60%;
 }
 /*PARTE DE CONTENEDOR 5*/
 
@@ -578,10 +625,20 @@ h1{
 }
 .c712{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
     flex-basis: 50vw;
     flex-shrink: 0;
-    background-color: rgb(192, 45, 45);
+    background-color: rgba(0, 0, 45,0.5);
     height: 60%;
+}
+.c712 img{
+    flex-basis: 10vw;
+    height: 40%;
+    object-fit: contain;
+    display: block;
 }
 .c711{
     display: flex;
@@ -590,6 +647,7 @@ h1{
     background-color: #84734d;
     height: 60%;
 }
+
 .caja7_2{
     display: flex;
     flex-basis: 100%;
@@ -640,6 +698,7 @@ footer{
         margin-bottom: 20px;
         margin-top: 10px;
     }
+    .contenedor_3
     .contenedor_5{
         justify-content: flex-start;
     }
