@@ -115,6 +115,7 @@ h1{
 .caja1_1{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     flex-shrink: 0;
     flex-basis: 25vw;
     background-color: #161616;
@@ -123,7 +124,7 @@ h1{
 }
 .caja1_1 img{
     display: block;
-    width: 100%;
+    flex-basis: 30%;
     height: 50%;
     object-fit: contain;
 }
@@ -354,6 +355,7 @@ h1{
 }
 .caja3_1{
     display: flex;
+
     flex-basis: 33vw;
     flex-shrink: 0;
     background-color: rgb(23, 196, 34);
@@ -672,9 +674,38 @@ footer{
     h1{
         font-size: 4vh;
     }
-    .contenedor_1 *{
-        flex-basis: 80vw;
+    .contenedor_1{
+        flex-direction: column;
     }
+    .caja1_1 img{
+        width: 50%;
+        height: 50%;
+    }
+    .caja1_2 img{
+        width: 50%;
+    }
+    .caja1_3 img{
+        width: 50%;
+    }
+    .caja1_1 .c11{
+        width: 50%;
+    }
+    .caja1_2 .c12{
+        width: 50%;
+    }
+    .caja1_3 .c13{
+        width: 50%;
+    }
+    .caja1_1{
+        height: 20vh;
+    }
+    .contenedor_1 .caja1_1, .caja1_2 ,.caja1_3{
+        width: 80vw;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: center;
+    }
+
     .contenedor_4 * {
         flex-basis: 80vw;
     }
@@ -695,10 +726,11 @@ footer{
     }
     .contenedor_3 * {
         flex-basis: 100%;
-        margin-bottom: 20px;
-        margin-top: 10px;
+        flex-wrap: wrap;
     }
-    .contenedor_3
+    .contenedor_3 img{
+        height: 30%;
+    }
     .contenedor_5{
         justify-content: flex-start;
     }
