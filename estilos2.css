@@ -1,0 +1,58 @@
+.caja_promo{
+    display: flex;
+    flex-basis: 1280px;
+    margin: auto;
+    max-width: 100%;
+    align-self: center;
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+}
+.img_p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.img_contenedor{
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+}
+.sub_promo{
+    background-color: #000;
+    border-color: #bbb;
+    color: #fff;
+}
+.sub_contenido{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 25px 33px;
+    left: 0;
+    right: 0;
+}
+.description{
+    font-size: .875em;
+    font-weight: 500;
+}
+/* <div class="caja_promo">
+    <div class="img_contenedor">
+        <img class="imagen_p" src="img/logo_mhworld_title.png" alt="Logo Monster Hunter World">
+    </div>
+    <div class="sub_promo">
+        <div class="sub_contenido">
+            <h2>MONSTER HUNTER WORLD</h2>
+            <div class="descripcion">
+                <p>Disfruta de la mejor experiencia de juego, utilizando todos los recursos a tu alcance para acechar monstruos en un nuevo mundo.</p>
+            </div>
+            <div class="boton">
+                <p>COMPRAR ></p>
+            </div>
+        </div>
+    </div>
+</div> */
