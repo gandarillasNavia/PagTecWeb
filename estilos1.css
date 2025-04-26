@@ -227,7 +227,7 @@ h2{
 .caja2_1 div img{ 
     align-items: center;
     height: 70%;
-    object-fit: fill;
+    object-fit: contain;
     display: block;
 }
 .caja2_1 div p{ 
@@ -256,7 +256,7 @@ h2{
 .caja2_2 div img{ 
     align-items: center;
     height: 70%;
-    object-fit: fill;
+    object-fit: contain;
     display: block;
 }
 .caja2_2 div p{ 
