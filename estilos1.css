@@ -487,56 +487,116 @@ h3{
     flex-wrap: wrap;
     flex-basis: 100%;
     flex-direction: row;
+    background: linear-gradient(90deg, #1e1e1e 0, #000 50%, #1e1e1e 100%);
     background-color: grey;
     justify-content: center;
     align-items: center;
     height: auto;
 }
-
 .caja5_head{
     width: 80%;
     color: aliceblue;
     font-size: 2vh;
 }
-.caja5_1{
+.caja5{
+    display: flex;
+    height: auto;
+    flex-basis: 80%;
+}
+.caja5_1 {
     display: flex;
     flex-shrink: 0;
-    flex-basis: 53vw;
+    flex-basis: 70%;
+    max-width: 810px;
+    height: 540px;
+    overflow: hidden;
+    position: relative;
     background-color: rgb(23, 196, 34);
-    height: 55vh;
-    margin: 20px;
 }
-.caja5_2{
+.caja5_1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.banner {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.titulo {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    gap: 10px;
+}
+.titulo h6 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+.play{
+    display: flex;
+    align-items: center;
+}
+.play img {
+    width: 60px;
+    height: 60px;
+}
+.caja5_2 {
     flex-shrink: 0;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     flex-basis: 25vw;
-    background-color: rgb(131, 209, 29);
-    height: 55vh;
-    margin: 20px;
+    height: auto;
+    margin-left: 20px;
 }
-.caja5_21{
+.caja5_21 {
     flex-shrink: 0;
     display: flex;
-    flex-basis: 80%;
+    flex-direction: column;
+    flex-basis: 100%;
     background-color: rgb(76, 88, 60);
-    height: 33%;
+    height: 170px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
 }
-.caja5_22{
-    flex-shrink: 0;
-    display: flex;
-    flex-basis: 80%;
-    background-color: rgb(76, 88, 60);
-    height: 33%;
+.caja5_21 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
-.caja5_23{
-    flex-shrink: 0;
-    display: flex;
-    flex-basis: 80%;
-    background-color: rgb(76, 88, 60);
-    height: 33%;
+.banner2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100px;
 }
+.caja5_21 .play img {
+    width: 60px;
+    height: 60px;
+}
+.titulo2{
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
 /*PARTE DE CONTENEDOR 6*/
 
 .contenedor_6{
@@ -804,8 +864,9 @@ h3{
     padding-bottom: 10VH;
 }
 .sub721{
+    padding-left: 5%;
     background-color: rgb(255, 255, 255);
-    flex-basis: 780px;
+    flex-basis: 600px;
 }
 .cont71 h4{
     margin-bottom: 10px;
@@ -852,6 +913,7 @@ h3{
 .icon{
     margin-right: 20px;
 }
+
 /*PARTE DE FOOTER*/
 
 footer{
@@ -885,19 +947,6 @@ footer{
     }
 }
 
-@media screen and (max-width: 1080px) {
-    .contenedor_5{
-        justify-content: flex-start;
-    }
-    .contenedor_5 .caja5_1{
-        flex-basis: 95vw;
-    }
-    .contenedor_5 .caja5_2{
-        justify-content: flex-start;
-        flex-basis: 60vw;
-        height: 99vh;
-    }
-}
 @media screen and (max-width: 1025px) {
     .h1 {
         justify-content: flex-start;
@@ -908,9 +957,17 @@ footer{
     }
     h1{
         font-size: 4vh;
+        height: 10vh;
     }
     .sub{
         height: auto;
+    }
+    .subh1{
+        width: 92%;
+        padding: 1%;
+    }
+    .sub p{
+        font-size: 1.5vh;
     }
     .contenedor_1{
         margin-bottom: 20px;
@@ -1053,7 +1110,43 @@ footer{
     }
     .desc6G{
         margin-top: 0%;
-        margin-bottom: 0%;
+        margin-bottom: 5%;
+    }
+    .sub721{
+        justify-content: flex-start;
+        flex-basis: 100vw;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .cont71{
+        padding-left: 3%;
+    }
+    .boton71 p{
+        width: 100%;
+    }
+    .sub722{
+        justify-content: center;
+        flex-basis: 100%;
+    }
+    .cont72{
+        text-align: center;
+        justify-content: center;
+    }
+    .contenedor_5{
+        justify-content: flex-start;
+    }
+    .caja5{
+        flex-wrap: wrap;
+    }
+    .caja5_1{
+        padding-left: 2%;
+        flex-basis: 90%;
+        margin-bottom: 20px;
+    }
+    .caja5_2{
+        padding-left: 2%;
+        flex-basis: 80%;
+        margin-bottom: 20px;
     }
 }
 
