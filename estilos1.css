@@ -609,21 +609,54 @@ h3{
     justify-content: center;
     flex-basis: 50vw;
     flex-shrink: 0;
-    background-color: rgba(0, 0, 45,0.5);
+    background-color: rgba(0, 0, 0, 0);
     height: 60%;
 }
-.c712 img{
+.s712 img{
     flex-basis: 10vw;
-    height: 40%;
+    height: 90%;
     object-fit: contain;
     display: block;
 }
-.c711{
+.s712{
     display: flex;
-    flex-basis: 25vw;
+    justify-content: center;
+    align-content: center;
+    direction: row;
+    flex-basis: 100%;
+    height: 50%;
+    
+}
+.c71{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 480px;
     flex-shrink: 0;
     background-color: #84734d;
-    height: 60%;
+    height: 300px;
+}
+.img7L{
+    background-color: #971313;
+    width: 240px;
+    height: 300px;
+}
+.img71{
+    background-color: red;
+    width:  240px;
+    height: 300px;
+
+}
+.img7L img{
+    flex-basis: 10vw;
+    height: 90%;
+    object-fit: contain;
+    display: block;
+}
+.img71 img{
+    flex-basis: 10vw;
+    height: 90%;
+    object-fit: contain;
+    display: block;
 }
 
 .caja7_2{
@@ -631,7 +664,7 @@ h3{
     flex-basis: 100%;
     flex-shrink: 0;
     background-color: rgb(255, 255, 255);
-    height: 35vh;
+    height: 300px;
 }
 
 /*PARTE DE FOOTER*/
@@ -700,6 +733,7 @@ footer{
     .sub{
         height: auto;
     }
+
     .contenedor_1{
         margin-bottom: 20px;
     }
