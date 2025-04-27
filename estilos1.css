@@ -12,14 +12,10 @@ p{
     margin: 0%;
 }
 * {
-    font-family: 'TradeGothicNextCondensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
-@font-face {
-    font-family: 'TradeGothicNextCondensed';
-    src: url('fonts/Trade_Gothic_Font/14\ Trade\ Gothic\ Font\ Download/') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
+
+
 
 /*PARTE HEADER, HECHO*/
 header{
@@ -712,7 +708,7 @@ h3{
 }
 .c71{
     display: flex;
-    flex-basis: 485px;
+    flex-basis: 30vw;
     flex-shrink: 3;
     justify-content: center;
     align-content: center;
@@ -745,7 +741,7 @@ h3{
     display: block;
 }
 .img71 img{
-    flex-basis: 10vw;
+    width: 100%;
     height: 90%;
     object-fit: contain;
     display: block;
@@ -754,6 +750,31 @@ h3{
     color: #ffffff;
     font-size: small;
     flex-basis: 100%;
+}
+.c712{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-basis: 55%;
+    flex-shrink: 1;
+    background-color: rgba(0,0,0 0.0);
+    height: 300px;
+}
+.img7{
+    width: 10%;
+    height: 20%;
+    object-fit: contain;
+    display: block;
+}
+.s712{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    direction: row;
+    flex-basis: 100%;
+    height: 50%;
 }
 .comprar7{
     color: #ffffff;
@@ -768,42 +789,32 @@ h3{
 }
 .caja7_2{
     display: flex;
-    flex-basis: 835px;
+    flex-basis: 100%;
     flex-shrink: 0;
-    background-color: rgb(143, 42, 42);
-    height: 300px;
+    background-color: rgb(255, 255, 255);
+    height: 268px;
 }
-.c712{
+.c721{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    flex-basis: 55%;
-    flex-shrink: 1;
-    background-color: rgba(0,0,0 0.0);
-    height: 300px;
-}
-.img7{
-    width: 130px;
-    height: 130px;
-    object-fit: contain;
-    display: block;
-}
-.s712{
-    display: flex;
     justify-content: space-evenly;
-    align-content: center;
-    direction: row;
     flex-basis: 100%;
-    height: 50%;
+    background-color: #5a2626;
 }
-
+.sub721{
+    background-color: green;
+    flex-basis: 780px;
+}
+.sub722{
+    background-color: rgb(55, 95, 55);
+    flex-basis: 476px;
+}
 /*PARTE DE FOOTER*/
 
 footer{
     display: flex;
     flex-basis: 100%;
+    background-color: #292828;
     background-color: #161616;
     height: 40vh;
 }
@@ -951,12 +962,14 @@ footer{
         font-size: 1em;
     }
     .caja7_1{
+        flex-basis: 100%;
         flex-wrap: wrap;
         height: auto;
         padding-top: 40px;
     }
     .c71{
         flex-basis: 100%;
+        height: 40vh;
     }
     .c712{
         padding-top: 50px;
@@ -970,25 +983,18 @@ footer{
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    /* .contenedor_7{
-        margin-top: 60px;
-        height: auto;
+    .s71{
+        padding-left: 30px;
+        height: 90%;
     }
-    .c71 {
-        flex-basis: 100%;
-        height: 450px;
+    .img7L{
+        width: 50vw;
+        height: 30vh;
     }
-    .c712 {
-        flex-basis: 100%;
-        height: 600px;
+    .img7 img{
+        width: 15vw;
+        height: 15vh;
     }
-    .img7L img {
-        width: 100%;
-        height: auto;
-        object-fit: fill;
-        display: block;
-    } */
-
     .caja6{
         flex-basis: 96%;
         flex-direction: column;
