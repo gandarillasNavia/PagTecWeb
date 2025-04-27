@@ -792,22 +792,65 @@ h3{
     flex-basis: 100%;
     flex-shrink: 0;
     background-color: rgb(255, 255, 255);
-    height: 268px;
+    height: auto;
 }
 .c721{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex-basis: 100%;
-    background-color: #5a2626;
+    background-color: #ffffff;
+    padding-top: 10VH;
+    padding-bottom: 10VH;
 }
 .sub721{
-    background-color: green;
+    background-color: rgb(255, 255, 255);
     flex-basis: 780px;
 }
+.cont71 h4{
+    margin-bottom: 10px;
+    flex-basis: 100%;
+    font-size: x-large;
+}
+.boton71{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+}
+.boton71 p{
+    width: 370px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(0, 0, 0);
+}
+.iconos{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    margin-right: 20px;
+}
 .sub722{
-    background-color: rgb(55, 95, 55);
-    flex-basis: 476px;
+    background-color: rgb(255, 255, 255);
+    flex-basis: 420px;
+}
+.cont72 h5{
+    margin-bottom: 10px;
+    flex-basis: 100%;
+    font-size: large;
+}
+.cont72{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 20px;
+}
+.iconos{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    margin-right: 20px;
 }
 /*PARTE DE FOOTER*/
 
