@@ -704,8 +704,7 @@ h3{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
     flex-basis: 100%;
     flex-shrink: 0;
     background-color: rgb(0, 0, 0);
@@ -782,25 +781,24 @@ h3{
     justify-content: center;
     flex-basis: 55%;
     flex-shrink: 1;
-    background-color: rgba(163, 124, 124, 0.8);
+    background-color: rgba(0,0,0 0.0);
     height: 300px;
 }
 .img7{
     width: 130px;
     height: 130px;
     object-fit: contain;
-    background-color: aliceblue;
     display: block;
 }
 .s712{
     display: flex;
-    background-color: red;
     justify-content: space-evenly;
     align-content: center;
     direction: row;
     flex-basis: 100%;
     height: 50%;
 }
+
 /*PARTE DE FOOTER*/
 
 footer{
@@ -952,7 +950,27 @@ footer{
     .descG{
         font-size: 1em;
     }
-    .contenedor_7{
+    .caja7_1{
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 40px;
+    }
+    .c71{
+        flex-basis: 100%;
+    }
+    .c712{
+        padding-top: 50px;
+        flex-basis: 100%;
+    }
+    .desc71{
+        flex-basis: 55%;
+    }
+    .comprar7{
+        flex-basis: 55%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /* .contenedor_7{
         margin-top: 60px;
         height: auto;
     }
@@ -969,7 +987,8 @@ footer{
         height: auto;
         object-fit: fill;
         display: block;
-    }
+    } */
+
     .caja6{
         flex-basis: 96%;
         flex-direction: column;
