@@ -12,7 +12,13 @@ p{
     margin: 0%;
 }
 * {
-    font-family: sans-serif;
+    font-family: 'TradeGothicNextCondensed', sans-serif;
+}
+@font-face {
+    font-family: 'TradeGothicNextCondensed';
+    src: url('fonts/Trade_Gothic_Font/14\ Trade\ Gothic\ Font\ Download/') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*PARTE HEADER, HECHO*/
@@ -690,7 +696,7 @@ h3{
 .contenedor_7{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 100vw;
+    flex-basis: 100%;
     background-color: rgb(255, 255, 255);
     height: auto;
 }
@@ -703,12 +709,11 @@ h3{
     flex-basis: 100%;
     flex-shrink: 0;
     background-color: rgb(0, 0, 0);
-    height: 50vh;
+    height: 444px;
 }
 .c71{
     display: flex;
-    flex-wrap: wrap;
-    flex-basis: 30%;
+    flex-basis: 485px;
     flex-shrink: 3;
     justify-content: center;
     align-content: center;
@@ -764,9 +769,9 @@ h3{
 }
 .caja7_2{
     display: flex;
-    flex-basis: 100%;
+    flex-basis: 835px;
     flex-shrink: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(143, 42, 42);
     height: 300px;
 }
 .c712{
@@ -775,24 +780,26 @@ h3{
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    flex-basis: 40%;
+    flex-basis: 55%;
     flex-shrink: 1;
-    background-color: rgba(0, 0, 0, 0);
-    height: 30%;
+    background-color: rgba(163, 124, 124, 0.8);
+    height: 300px;
 }
-.s712 img{
-    width: 150px;
-    height: 150px;
+.img7{
+    width: 130px;
+    height: 130px;
     object-fit: contain;
+    background-color: aliceblue;
     display: block;
 }
 .s712{
     display: flex;
-    justify-content: center;
+    background-color: red;
+    justify-content: space-evenly;
     align-content: center;
     direction: row;
     flex-basis: 100%;
-    height: 100%;
+    height: 50%;
 }
 /*PARTE DE FOOTER*/
 
