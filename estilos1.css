@@ -71,7 +71,6 @@ nav p{
 .desplegable > p {
     cursor: pointer;
 }
-
 .head {
     display: flex;
     position: relative;
@@ -1227,6 +1226,30 @@ footer{
         padding-left: 2%;
         flex-basis: 80%;
         margin-bottom: 20px;
+    }
+    .foot{
+        flex-basis: 100%;
+    }
+    .contf{
+        flex-wrap: wrap;
+    }
+    .links {
+        flex-basis: 100vW;
+        height: auto;
+    }
+    .links p {
+        display: none;
+    }
+    .links.active p {
+        display: block;
+    }
+    .links h6 {
+        cursor: pointer;
+        margin-bottom: 2%;
+    }
+    .imgf img{
+        width: 20%;
+        height: 20%;
     }
 }
 
