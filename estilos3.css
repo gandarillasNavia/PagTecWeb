@@ -159,7 +159,6 @@ h1{
     font-size: 1.5vh;
 }
 
-
 /*PARTE DE CONTENEDOR 7*/
 
 .contenedor_7{
@@ -169,7 +168,6 @@ h1{
     background-color: rgb(255, 255, 255);
     height: auto;
 }
-
 .caja7_2{
     display: flex;
     flex-basis: 100%;
@@ -236,7 +234,6 @@ h1{
 .icon{
     margin-right: 20px;
 }
-
 
 footer{
     display: flex;
