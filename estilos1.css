@@ -1014,11 +1014,11 @@ footer{
 
 /*Media querys*/
 
-@media screen and (max-width: 1700px) {
+
     .caja3{
         flex-basis: 40%;
     }
-}
+
 @media screen and (max-width: 1262px) {
     .caja1{
         flex-basis: 30vw;
