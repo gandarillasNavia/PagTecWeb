@@ -1018,6 +1018,9 @@ footer{
 .caja3{
     flex-basis: 46%;
 }
+.caja3G{
+    flex-basis: 80%;
+}
 
 @media screen and (max-width: 1262px) {
     .caja1{
