@@ -93,7 +93,6 @@ nav p{
     background-color: #000000;
     height: 1px;
 }
-
 h2{
     display: block;
     font-size: 2em;
@@ -111,7 +110,6 @@ h2{
 .caja1{
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(255, 255, 255);
     flex-basis: 962px;
     height: auto;
 }
@@ -121,10 +119,55 @@ h2{
     align-content: flex-start;
     background-color: rgb(255, 255, 255);
     flex-basis: 100%;
-    height: 40vh;
+    height: fit-content;
 }
-
-
+.caja{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    flex-basis: 100%;
+}
+.head_caja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-basis: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 20px; /
+}
+.head_caja h3 {
+    flex-basis: 100%;
+    font-size: xx-large;
+    font-weight: lighter;
+    margin: 0; 
+}
+.head_caja p {
+    flex-basis: 100%;
+    font-size: large;
+    font-weight: lighter;
+    margin: 0; 
+}
+.img_h {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center; 
+    align-items: center; 
+    height: 613px; 
+}
+.img_h img {
+    display: block;
+    object-fit: contain;
+    width: 100%; 
+    max-height: 100%;
+}
+.contenido_h {
+    display: flex;
+    padding-top: 20px;
+    flex-basis: 100%;
+    justify-content: center;  
+    align-items: center;  
+}
 /*PARTE DE CONTENEDOR 7*/
 
 .contenedor_7{
@@ -179,7 +222,7 @@ h2{
     margin-right: 20px;
 }
 .sub722{
-    background-color: rgb(255, 255, 255);
+    background-color: #F7F8FA;;
     flex-basis: 420px;
 }
 .cont72 h5{
@@ -324,5 +367,9 @@ footer{
     .imgf img{
         width: 20%;
         height: 20%;
+    }
+    .caja1{
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
