@@ -1014,7 +1014,7 @@ footer{
 
 /*Media querys*/
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1700px) {
     .caja3{
         flex-basis: 640px;
     }
