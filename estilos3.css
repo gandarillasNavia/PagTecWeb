@@ -15,8 +15,6 @@ p{
     font-family: 'Oswald', sans-serif;
 }
 
-
-
 /*PARTE HEADER, HECHO*/
 header{
     display: flex;
@@ -40,11 +38,38 @@ nav{
     justify-content: space-evenly;
     background-color: black;
     padding-bottom: 20px;
+    padding-top: 20px;
+    z-index: 4;
 }
 nav p{
     color: white;
-    font-weight: bolder;
-    font-size: 2vh;
+    font-weight: lighter;
+    font-size: 1.5vh;
+}
+.desplegable {
+    display: flex;
+    position: relative;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    z-index: 1;
+}
+.desplegable:hover .submenu {
+    display: block;
+}
+.submenu p {
+    color:#000000;
+    padding: 5px 0;
+    margin: 0; 
+}
+.desplegable > p {
+    cursor: pointer;
 }
 .head {
     display: flex;
@@ -132,8 +157,82 @@ h1{
 }
 
 
+/*PARTE DE CONTENEDOR 7*/
 
+.contenedor_7{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+}
 
+.caja7_2{
+    display: flex;
+    flex-basis: 100%;
+    flex-shrink: 0;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+}
+.c721{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+    background-color: #ffffff;
+    padding-top: 10VH;
+    padding-bottom: 10VH;
+}
+.sub721{
+    padding-left: 5%;
+    background-color: rgb(255, 255, 255);
+    flex-basis: 600px;
+}
+.cont71 h4{
+    margin-bottom: 10px;
+    flex-basis: 100%;
+    font-size: x-large;
+}
+.boton71{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+}
+.boton71 p{
+    width: 370px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(0, 0, 0);
+}
+.iconos{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    margin-right: 20px;
+}
+.sub722{
+    background-color: rgb(255, 255, 255);
+    flex-basis: 420px;
+}
+.cont72 h5{
+    margin-bottom: 10px;
+    flex-basis: 100%;
+    font-size: large;
+}
+.cont72{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 20px;
+}
+.iconos{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    margin-right: 20px;
+}
 
 
 footer{
@@ -195,4 +294,69 @@ footer{
     height: 90%;
     object-fit: contain;
     display: block;
+}
+
+@media screen and (max-width: 1025px) {
+    .h1 {
+        justify-content: flex-start;
+        position: absolute;
+        top: 55vh;
+        left: 50vw; 
+        width: 100%;
+    }
+    h1{
+        font-size: 4vh;
+        height: 10vh;
+    }
+    .sub{
+        height: auto;
+    }
+    .subh1{
+        width: 92%;
+        padding: 1%;
+    }
+    .sub p{
+        font-size: 1.5vh;
+    }
+    .sub721{
+        justify-content: flex-start;
+        flex-basis: 100vw;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .boton71 p{
+        width: 100%;
+    }
+    .sub722{
+        justify-content: center;
+        flex-basis: 100%;
+    }
+    .cont72{
+        text-align: center;
+        justify-content: center;
+    }
+    .foot{
+        flex-basis: 100%;
+    }
+    .contf{
+        flex-wrap: wrap;
+    }
+    .links {
+        flex-basis: 100vW;
+        height: auto;
+    }
+    .links p {
+        display: none;
+    }
+    .links.active p {
+        display: block;
+    }
+    .links h6 {
+        cursor: pointer;
+        margin-bottom: 2%;
+    }
+    .imgf img{
+        width: 20%;
+        height: 20%;
+    }
 }
