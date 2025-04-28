@@ -24,6 +24,9 @@ header{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
 }
 header img{
     width: 30%;
