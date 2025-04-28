@@ -85,79 +85,45 @@ nav p{
     justify-content: center;    
 }
 
-/*PARTE DEL h1*/
-.head .imgh {
-    width: 100vw;
-    height: 70vh;
-    object-fit: cover;
-    display: block;
-    position: absolute;
-    z-index: 3; 
-}
-.head .imgh1 {
-    width: 100vw;
-    height: 70vh;
-    object-fit: cover;
-    display: block;
-    position: absolute;
-    z-index: 3; 
-}
-.h1 {
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    position: relative;
-    width: 30vw;
-    top: 20%;
-    left: 40vw;
-    height: 30vh;
-    transform: translate(-50%, -50%); 
-    color: white;
-    flex-basis: 30%;
-    background-color: rgba(102, 55, 55, 0.5); 
-    padding: 1rem 2rem; 
-    z-index: 3; 
-}
-.subh1{
-    padding: 5%;
-    flex-basis: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 4; 
-}
-h1{
-    margin: 0%;
-    display: flex;
-    text-align:left;
-    font-size: 5vh;
-    background-color: rgba(0, 0, 0, 0); 
+/*PARTE DE CONTENEDOR 1*/
+.linea{
+    margin-top: 20px;
     margin-bottom: 20px;
-    width: fit-content;
-    color: gold;
+    flex-basis: 100%;
+    background-color: #000000;
+    height: 1px;
 }
-.sub{
+
+h2{
+    display: block;
+    font-size: 2em;
+    font-weight: lighter;
+    unicode-bidi: isolate;
+}
+.contenedor_1{
     display: flex;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0); 
-    height: 30%;
-    width: 100%;
-}
-.sub p{
-    color: gold;
-    font-size: 2vh;
-}
-.texto{
+    flex-basis: 100%;
     justify-content: center;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.caja1{
     display: flex;
-    background-color: #84734d;
-    height: 15%;
-    width: 100%;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    flex-basis: 962px;
+    height: auto;
 }
-.texto p{
-    align-content: center;
-    font-size: 1.5vh;
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: rgb(255, 255, 255);
+    flex-basis: 100%;
+    height: 40vh;
 }
+
 
 /*PARTE DE CONTENEDOR 7*/
 
@@ -165,14 +131,14 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: #F7F8FA;
     height: auto;
 }
 .caja7_2{
     display: flex;
     flex-basis: 100%;
     flex-shrink: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: #F7F8FA;
     height: auto;
 }
 .c721{
@@ -180,13 +146,13 @@ h1{
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex-basis: 100%;
-    background-color: #ffffff;
+    background-color: #F7F8FA;
     padding-top: 10VH;
     padding-bottom: 10VH;
 }
 .sub721{
     padding-left: 5%;
-    background-color: rgb(255, 255, 255);
+    background-color: #F7F8FA;
     flex-basis: 600px;
 }
 .cont71 h4{
@@ -196,7 +162,7 @@ h1{
 }
 .boton71{
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: #F7F8FA;
     color: #ffffff;
 }
 .boton71 p{

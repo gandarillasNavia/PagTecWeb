@@ -782,7 +782,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: #F7F8FA;;
     height: auto;
 }
 .caja7_1{
@@ -836,7 +836,7 @@ h3{
     display: block;
 }
 .desc71{
-    color: #ffffff;
+    color: #F7F8FA;;
     font-size: small;
     flex-basis: 100%;
 }
@@ -880,7 +880,7 @@ h3{
     display: flex;
     flex-basis: 100%;
     flex-shrink: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: #F7F8FA;;
     height: auto;
 }
 .c721{
@@ -888,13 +888,13 @@ h3{
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex-basis: 100%;
-    background-color: #ffffff;
+    background-color: #F7F8FA;;
     padding-top: 10VH;
     padding-bottom: 10VH;
 }
 .sub721{
     padding-left: 5%;
-    background-color: rgb(255, 255, 255);
+    background-color: #F7F8FA;;
     flex-basis: 600px;
 }
 .cont71 h4{
@@ -904,7 +904,7 @@ h3{
 }
 .boton71{
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: #F7F8FA;;
     color: #ffffff;
 }
 .boton71 p{
@@ -921,7 +921,7 @@ h3{
     margin-right: 20px;
 }
 .sub722{
-    background-color: rgb(255, 255, 255);
+    background-color: #F7F8FA;;
     flex-basis: 420px;
 }
 .cont72 h5{
